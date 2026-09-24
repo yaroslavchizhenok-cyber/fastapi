@@ -1,0 +1,6 @@
+{% extends "layout.html" %}
+{% block content %}
+    {% for post in posts %}
+        <h2><li>{{ post['title'] }} by {{ post['author'] }} on {{ post['date_posted'] }}</li></h2>
+    {% endfor %}
+{% endblock content %}
